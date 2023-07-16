@@ -16,5 +16,6 @@ jobs:
       - uses: actions/setup-java@v3
         with:
           java-version: '18'
+          distribution: 'openJDK'
       - name: Run the Maven verify phase
         run: mvn --batch-mode --update-snapshots verify
